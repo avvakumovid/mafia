@@ -85,7 +85,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className='gallery'>
+      <section className='gallery section'>
         <div className='gallery__content content'>
           <h2 className='gallery__header heading'>Галерея</h2>
           <p className='gallery__paragraph paragraph'>
