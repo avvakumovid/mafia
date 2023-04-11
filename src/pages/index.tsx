@@ -3,9 +3,14 @@ import builds from '../../public/builds.png';
 import cars from '../../public/cars.png';
 import bridge from '../../public/bridge.png';
 import cards from '../../public/cards.jpg';
-
+import table from '../../public/table.jpg';
+import s from '../../public/174.jpg';
+import ff from '../../public/ff.jpg';
 import { useEffect } from 'react';
-
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper';
 export default function Home() {
   const handleScroll = () => {
     document.body.style.cssText += `--scrollTop: ${window.scrollY}px`;
@@ -66,11 +71,11 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <section className='intro'>
-        <Image className='intro__image' alt='intro' src={cards} />
-        <div className='intro__content'>
-          <h2 className='intro__header'>Вступление</h2>
-          <p className='intro__paragraph'>
+      <section className='section intro'>
+        <Image className='intro__image image' alt='intro' src={cards} />
+        <div className='intro__content content'>
+          <h2 className='intro__header heading'>Вступление</h2>
+          <p className='intro__paragraph paragraph'>
             Добро пожаловать в клуб "Мафия" - место, где любители настольных игр
             могут собраться вместе, чтобы играть в увлекательную игру "Мафия".
             Наш клуб существует уже много лет и является одним из самых
@@ -79,6 +84,32 @@ export default function Home() {
             и насладиться атмосферой игры.
           </p>
         </div>
+      </section>
+      <section className='gallery'>
+        <div className='gallery__content content'>
+          <h2 className='gallery__header heading'>Галерея</h2>
+          <p className='gallery__paragraph paragraph'>
+            Наши фотографии - это лучший способ узнать о нашем клубе и игре
+            "Мафия". Мы с удовольствием делимся своими снимками, чтобы показать,
+            как мы проводим время, играя в игру, и чтобы познакомиться с нашими
+            участниками. Вы можете увидеть фотографии на нашем сайте и
+            ознакомиться с нашими последними играми.
+          </p>
+        </div>
+        <Swiper
+          pagination={{
+            dynamicBullets: true,
+          }}
+          modules={[Pagination]}
+          className='mySwiper'
+        >
+          <SwiperSlide>
+            <Image className='gallery__image' alt='intro' src={cards} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image className='gallery__image' alt='intro' src={cards} />
+          </SwiperSlide>
+        </Swiper>
       </section>
     </>
   );

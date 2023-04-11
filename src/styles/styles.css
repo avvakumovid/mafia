@@ -72,7 +72,7 @@
   letter-spacing: calc(var(--index) / 3.5);
 }
 
-.intro {
+.section {
   padding: 10vh 10vw;
   min-height: 100vh;
   display: flex;
@@ -82,18 +82,22 @@
   row-gap: 40px;
 }
 
+.intro {}
 
-.intro__image {
+.image {
   width: calc(var(--index) * 25);
   height: auto;
   border-radius: 8px;
   filter: grayscale(30%);
 }
 
+.intro__image {}
+
 @media (max-width: 990px) {
-  .intro {
+  .section {
     flex-direction: column-reverse;
     justify-content: center;
+    min-height: auto;
   }
 }
 
@@ -114,20 +118,27 @@
  transform: translate3d(0, calc(var(--scrollTop) / var(--rotation)), 0);*/
 }
 
-
-.intro__header {
+.heading {
   text-transform: uppercase;
   font-size: calc(var(--index) * 1.8);
   letter-spacing: calc(var(--index) / 7);
   will-change: transform;
   color: var(--red);
+}
+
+.intro__header {
+
   /*text-shadow: var(--red-shadow)
    transform: translate3d(0, calc(var(--scrollTop) / var(--rotation)), 0);;*/
 }
 
-.intro__paragraph {
+.paragraph {
   max-width: calc(var(--index) * 25);
   font-size: calc(var(--index) * 1.2);
+}
+
+.intro__paragraph {
+
 
   /*  transform: var(--intro-transform);*/
   will-change: transform;
@@ -138,33 +149,6 @@
   padding: 0 7vw;
 }
 
-.gallery {
-  display: flex;
-  padding: calc(var(--index) * 8) 0;
-}
-
-.gallery>* {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.gallery__item {
-  max-width: calc(var(--index) * 21);
-  margin-bottom: var(--gallery-gap);
-  max-height: 180vh;
-  border-radius: 8px;
-}
-
-.gallery__left {
-  margin-top: calc(var(--gallery-gap) * 1.75);
-}
-
-.gallery__right .gallery__item {
-  margin: 0;
-  margin-top: var(--gallery-gap);
-}
 
 .text-block {
   color: var(--color-text);
@@ -179,4 +163,58 @@
 
 .text-block__p {
   line-height: 1.75;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: calc(var(--index) * 3);
+  row-gap: 40px;
+}
+
+.gallery__paragraph {
+  max-width: 100%;
+}
+
+.gallery__carousel {
+  max-height: 200px;
+}
+
+.gallery__item {}
+
+.gallery__img {
+  width: calc(var(--index) * 25);
+  height: auto;
+  border-radius: 8px;
+}
+
+.gallery__swiper {
+  height: calc(var(--index) * 25);
+  width: 100%;
+
+}
+
+.gallery__image {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.swiper {
+  width: 100%;
+  max-height: 90vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
