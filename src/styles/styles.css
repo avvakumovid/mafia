@@ -17,13 +17,15 @@
 
 body {
   background-color: #010101;
-  background-image: url(../../public/bg.jpg);
   background-size: 50px;
+  background-image: url('../../public/bg.jpg');
+  background-repeat: repeat;
   font-family: 'Raleway';
   line-height: 1.55;
   color: red;
   color: #fafafa
 }
+
 
 .main-header {
   position: relative;
@@ -103,6 +105,7 @@ body {
 }
 
 .main-article {
+  position: relative;
   --main-article-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
   transition: var(--transition);
   min-height: 100vh;

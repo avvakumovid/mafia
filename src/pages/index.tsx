@@ -3,6 +3,8 @@ import Image from 'next/image';
 import builds from '../../public/builds.png';
 import cars from '../../public/cars.png';
 import bridge from '../../public/bridge.png';
+import bg from '../../public/bg.jpg';
+
 import { useEffect } from 'react';
 
 export default function Home() {
@@ -32,6 +34,7 @@ export default function Home() {
               style={{
                 objectFit: 'cover',
               }}
+              unoptimized
             />
           </div>
           <div className='layer layers__middle'>
@@ -45,6 +48,7 @@ export default function Home() {
               style={{
                 objectFit: 'cover',
               }}
+              unoptimized
             />
           </div>
           <div className='layer layers__front'>
@@ -52,6 +56,7 @@ export default function Home() {
               alt='cars'
               src={cars}
               placeholder='blur'
+              unoptimized
               quality={100}
               fill
               sizes='100vw'
@@ -62,7 +67,6 @@ export default function Home() {
           </div>
         </div>
       </header>
-
       <article className='main-article'>
         <div className='main-article__content'>
           <h2 className='main-article__header'>To be continued</h2>
