@@ -21,13 +21,13 @@
 
 @media screen and (max-width: 767px) {
   :root {
-    --rotation: 2.8
+    --rotation1: 2.8
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   :root {
-    --rotation: 2.6
+    --rotation1: 2.6
   }
 }
 
@@ -68,12 +68,12 @@
 
 .layers__header {
   z-index: 1;
-  transform: translate3d(0, calc(var(--scrollTop) / 1.5), 0);
+  transform: translate3d(0, calc(var(--scrollTop) / var(--rotation)), 0);
   will-change: transform;
   text-transform: uppercase;
   font-weight: 900;
   color: var(--red);
-  text-shadow: var(--red-shadow);
+  /*text-shadow: var(--red-shadow);*/
 }
 
 .layers__title {
@@ -88,7 +88,6 @@
 
 .main-article {
   z-index: -1;
-  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -99,22 +98,25 @@
 }
 
 .main-article__header {
+  z-index: -1;
   text-transform: uppercase;
   font-size: calc(var(--index) * 1.8);
   letter-spacing: calc(var(--index) / 7);
   will-change: transform;
-  margin-top: calc(var(--index) * -17);
+  margin-top: -50vh;
   transform: translate3d(0, calc(var(--scrollTop) / var(--rotation)), 0);
 
 
+
   color: var(--red);
-  text-shadow: var(--red-shadow);
+  /*text-shadow: var(--red-shadow)
+   transform: translate3d(0, calc(var(--scrollTop) / var(--rotation)), 0);;*/
 }
 
 .main-article__paragraph {
   max-width: calc(var(--index) * 30);
   font-size: calc(var(--index) * .9);
-  margin-top: calc(var(--index) / 2);
+
   /*  transform: var(--main-article-transform);*/
   will-change: transform;
 
