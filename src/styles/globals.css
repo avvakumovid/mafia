@@ -9,6 +9,7 @@
 :root {
   --index: calc(1vw + 1vh);
   --red: rgb(174, 26, 26);
+  --red-shadow: 0 0 15px rgb(99, 30, 30);
   --color-header: #f4efec;
   --color-text: #cdc6c3;
   --gallery-gap: calc(var(--index) * 10)

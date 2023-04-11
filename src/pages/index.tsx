@@ -1,9 +1,7 @@
-import Head from 'next/head';
 import Image from 'next/image';
 import builds from '../../public/builds.png';
 import cars from '../../public/cars.png';
 import bridge from '../../public/bridge.png';
-import bg from '../../public/bg.jpg';
 
 import { useEffect } from 'react';
 
@@ -23,7 +21,7 @@ export default function Home() {
             <div className='layers__caption'>Welcome to</div>
             <div className='layers__title'>MAFIA NOVAYA RIGA</div>
           </div>
-          <div className='layer layers__base'>
+          <div className='layer layers__bridge'>
             <Image
               alt='bridge'
               src={bridge}
@@ -37,7 +35,7 @@ export default function Home() {
               unoptimized
             />
           </div>
-          <div className='layer layers__middle'>
+          <div className='layer layers__builds'>
             <Image
               alt='builds'
               src={builds}
@@ -51,7 +49,7 @@ export default function Home() {
               unoptimized
             />
           </div>
-          <div className='layer layers__front'>
+          <div className='layer layers__cars'>
             <Image
               alt='cars'
               src={cars}
@@ -68,15 +66,9 @@ export default function Home() {
         </div>
       </header>
       <article className='main-article'>
+        <h2 className='main-article__header'>To be continued</h2>
         <div className='main-article__content'>
-          <h2 className='main-article__header'>To be continued</h2>
-          <p className='main-article__paragraph'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non
-            expedita eos consequuntur repellat dolorum soluta sapiente ipsam
-            culpa iusto doloremque qui perferendis est distinctio rem
-            repudiandae eius maiores cumque, harum voluptatum enim!
-          </p>
-          <div className='copy'>© Avvakumovid</div>
+          <p className='main-article__paragraph'></p>
         </div>
       </article>
     </>
