@@ -2,6 +2,7 @@ import Image from 'next/image';
 import builds from '../../public/builds.png';
 import cars from '../../public/cars.png';
 import bridge from '../../public/bridge.png';
+import cards from '../../public/cards.jpg';
 
 import { useEffect } from 'react';
 
@@ -66,13 +67,16 @@ export default function Home() {
         </div>
       </header>
       <section className='intro'>
+        <Image className='intro__image' alt='intro' src={cards} />
         <div className='intro__content'>
-          <h2 className='intro__header'>To be continued</h2>
+          <h2 className='intro__header'>Вступление</h2>
           <p className='intro__paragraph'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-            nesciunt, voluptate velit provident repudiandae, sunt enim doloribus
-            laboriosam unde necessitatibus, corrupti saepe dicta maiores et ex
-            earum similique! Corrupti, repellendus!
+            Добро пожаловать в клуб "Мафия" - место, где любители настольных игр
+            могут собраться вместе, чтобы играть в увлекательную игру "Мафия".
+            Наш клуб существует уже много лет и является одним из самых
+            популярных мест в городе для проведения игр. Мы организуем
+            регулярные игры и турниры, на которых вы можете испытать свои навыки
+            и насладиться атмосферой игры.
           </p>
         </div>
       </section>
