@@ -1,32 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --index: calc(1vw + 1vh);
-  --red: rgb(174, 26, 26);
-  --color-header: #f4efec;
-  --color-text: #cdc6c3;
-  --gallery-gap: calc(var(--index) * 10)
-}
-
-
-body {
-  background-color: #010101;
-  background-size: 50px;
-  background-image: url('../../public/bg.jpg');
-  background-repeat: repeat;
-  font-family: 'Raleway';
-  line-height: 1.55;
-  color: red;
-  color: #fafafa
-}
-
-
 .main-header {
   position: relative;
 
