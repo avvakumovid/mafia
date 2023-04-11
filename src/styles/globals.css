@@ -17,11 +17,19 @@
 }
 
 body {
-  background-color: #010101;
+  background-color: #181818;
   background-size: 50px;
-  background-image: url('../../public/bg.jpg');
   background-repeat: repeat;
   font-family: 'Raleway';
   line-height: 1.55;
-  color: #fafafa
+  color: #fafafa;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
 }
