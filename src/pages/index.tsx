@@ -66,9 +66,14 @@ export default function Home() {
         </div>
       </header>
       <article className='main-article'>
-        <h2 className='main-article__header'>To be continued</h2>
         <div className='main-article__content'>
-          <p className='main-article__paragraph'></p>
+          <h2 className='main-article__header'>To be continued</h2>
+          <p className='main-article__paragraph'>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+            nesciunt, voluptate velit provident repudiandae, sunt enim doloribus
+            laboriosam unde necessitatibus, corrupti saepe dicta maiores et ex
+            earum similique! Corrupti, repellendus!
+          </p>
         </div>
       </article>
     </>

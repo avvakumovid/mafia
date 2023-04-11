@@ -15,21 +15,6 @@
 }
 */
 
-:root {
-  --rotation: 1.6
-}
-
-@media screen and (max-width: 767px) {
-  :root {
-    --rotation1: 2.8
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  :root {
-    --rotation1: 2.6
-  }
-}
 
 .layers {
   height: 100vh;
@@ -43,31 +28,32 @@
 }
 
 .layer {
+  z-index: 1;
   height: 100%;
   width: 100%;
   position: absolute;
   background-size: cover;
   background-position: center;
   will-change: transform;
-  z-index: 2;
 }
 
 .layers__bridge {
+  z-index: 3;
   transform: translate3d(0, calc(var(--scrollTop) / 2.6), 0);
-  z-index: 0;
 }
 
 .layers__cars {
+  z-index: 5;
   transform: translate3d(0, calc(var(--scrollTop) / 12), 0);
 }
 
 .layers__builds {
-  z-index: 0;
+  z-index: 3;
   transform: translate3d(0, calc(var(--scrollTop) / 3.4), 0);
 }
 
 .layers__header {
-  z-index: 1;
+  z-index: 4;
   transform: translate3d(0, calc(var(--scrollTop) / var(--rotation)), 0);
   will-change: transform;
   text-transform: uppercase;
@@ -87,7 +73,6 @@
 }
 
 .main-article {
-  z-index: -1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -97,14 +82,17 @@
 
 }
 
+.main-article__content {
+  margin-top: -50vh;
+  transform: translate3d(0, calc(var(--scrollTop) / var(--rotation)), 0);
+}
+
+
 .main-article__header {
-  z-index: -1;
   text-transform: uppercase;
   font-size: calc(var(--index) * 1.8);
   letter-spacing: calc(var(--index) / 7);
   will-change: transform;
-  margin-top: -50vh;
-  transform: translate3d(0, calc(var(--scrollTop) / var(--rotation)), 0);
 
 
 
