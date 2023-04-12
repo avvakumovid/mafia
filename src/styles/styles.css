@@ -340,10 +340,7 @@
 }
 
 .location__item {
-
   width: 50%;
-
-
 }
 
 .location__item-heading {
@@ -471,7 +468,13 @@
     flex-direction: column;
   }
 
+  .location__item {
+    width: 100%;
+  }
 
+  .location__image {
+    height: calc(var(--index) * 13);
+  }
 
 }
 
