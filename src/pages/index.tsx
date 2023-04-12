@@ -88,25 +88,19 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className='location section'>
-        <h2 className='location__heading heading'>Локации</h2>
-        <div></div>
-      </section>
-      <section className='gallery section'>
-        <div className='container'>
-          <div className='box-1'>
-            <div className='gallery__heading content'>
-              <h2 className='gallery__heading heading'>Галерея</h2>
-              <p className='gallery__paragraph '>
-                Наши фотографии - это лучший способ узнать о нашем клубе и игре
-                "Мафия". Мы с удовольствием делимся своими снимками, чтобы
-                показать, как мы проводим время, играя в игру, и чтобы
-                познакомиться с нашими участниками. Вы можете увидеть фотографии
-                на нашем сайте и ознакомиться с нашими последними играми.
-              </p>
-            </div>
+      <section className='section'>
+        <div className='grid'>
+          <div className='grid__item'>
+            <h2 className='heading'>Галерея фотографий</h2>
+            <p className='grid__paragraph'>
+              Наши фотографии - это лучший способ узнать о нашем клубе и игре
+              "Мафия". Мы с удовольствием делимся своими снимками, чтобы
+              показать, как мы проводим время, играя в игру, и чтобы
+              познакомиться с нашими участниками. Вы можете увидеть фотографии
+              на нашем сайте и ознакомиться с нашими последними играми.
+            </p>
           </div>
-          <div className='box-2'>
+          <div className='grid__item'>
             <Image
               alt='cars'
               src={sicilia}
@@ -114,14 +108,12 @@ export default function Home() {
               unoptimized
               quality={100}
               fill
-              sizes='100vw'
               style={{
                 objectFit: 'cover',
-                objectPosition: 'center center',
               }}
             />
           </div>
-          <div className='box-3'>
+          <div className='grid__item'>
             <Image
               alt='cars'
               src={paris}
@@ -129,99 +121,115 @@ export default function Home() {
               unoptimized
               quality={100}
               fill
-              sizes='100vw'
-              style={{ objectFit: 'cover' }}
+              style={{
+                objectFit: 'cover',
+              }}
             />
           </div>
-          <div className='box-4'>
+          <div className='grid__item'>
+            <Image
+              alt='cars'
+              src={newYork}
+              placeholder='blur'
+              unoptimized
+              quality={100}
+              fill
+              style={{
+                objectFit: 'cover',
+              }}
+            />
+          </div>
+          <div className='grid__item'>
             <Swiper
               pagination={{
                 dynamicBullets: true,
               }}
+              className='grid__swiper'
               modules={[Pagination]}
-              className='mySwiper'
             >
               <SwiperSlide>
-                <div className='swiper__slide'>
+                <div className='grid__swiper'>
                   <Image
                     alt='cars'
                     src={chicago}
                     placeholder='blur'
                     unoptimized
                     quality={100}
-                    fill
-                    sizes='100vw'
-                    style={{ objectFit: 'cover' }}
+                    style={{
+                      height: '100%',
+                      width: 'auto',
+                    }}
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className='swiper__slide'>
+                <div className='grid__swiper'>
                   <Image
                     alt='cars'
                     src={newYork}
                     placeholder='blur'
                     unoptimized
                     quality={100}
-                    fill
-                    sizes='100vw'
-                    style={{ objectFit: 'cover' }}
+                    className='grid__swiper'
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className='swiper__slide'>
+                <div className='grid__swiper'>
                   <Image
                     alt='cars'
                     src={sicilia}
                     placeholder='blur'
                     unoptimized
                     quality={100}
-                    fill
-                    sizes='100vw'
-                    style={{ objectFit: 'cover' }}
+                    className='grid__swiper'
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className='swiper__slide'>
+                <div className='grid__swiper'>
                   <Image
                     alt='cars'
                     src={paris}
                     placeholder='blur'
                     unoptimized
                     quality={100}
-                    fill
-                    sizes='100vw'
-                    style={{ objectFit: 'cover' }}
+                    className='grid__swiper'
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='grid__swiper'>
+                  <Image
+                    alt='cars'
+                    src={paris}
+                    placeholder='blur'
+                    unoptimized
+                    quality={100}
+                    className='grid__swiper'
                   />
                 </div>
               </SwiperSlide>
             </Swiper>
           </div>
-          <div className='box-5'>
+          <div className='grid__item'>
             <Image
               alt='cars'
-              src={newYork}
+              src={ff}
               placeholder='blur'
               unoptimized
               quality={100}
               fill
-              style={{ objectFit: 'cover' }}
-            />
-          </div>
-          <div className='box-6'>
-            <Image
-              alt='cars'
-              src={newYork}
-              placeholder='blur'
-              unoptimized
-              quality={100}
-              fill
-              style={{ objectFit: 'cover' }}
+              style={{
+                objectFit: 'cover',
+              }}
             />
           </div>
         </div>
+      </section>
+      <section className='location section'>
+        <h2 className='location__heading heading'>Локации</h2>
+        <div></div>
       </section>
     </>
   );
