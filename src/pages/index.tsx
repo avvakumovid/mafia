@@ -8,6 +8,8 @@ import chicago from '../../public/chicago.jpg';
 import newYork from '../../public/new-york.jpg';
 import sicilia from '../../public/sicilia.jpg';
 import paris from '../../public/paris.jpg';
+import location1 from '../../public/location1.jpg';
+import location2 from '../../public/location2.jpg';
 
 import { useEffect } from 'react';
 import 'swiper/css';
@@ -229,8 +231,83 @@ export default function Home() {
       </section>
       <section className='location section'>
         <h2 className='location__heading heading'>Локации</h2>
-        <div></div>
+        <div className='location__content'>
+          <div className='location__item'>
+            <h3 className='location__item-heading'>
+              Гастробар Хлеб. Вино. Жизнь.
+            </h3>
+            <div className='location__info'>
+              <ul className='location__info-text'>
+                <li>
+                  <strong>Адрес:</strong>
+                  <a
+                    href='https://yandex.ru/profile/1748208192'
+                    target='_blank'
+                  >
+                    Центральная ул., 27/1, д. Покровское (ТЦ Покровский)
+                  </a>
+                </li>
+                <li>
+                  <strong>Сайт:</strong>
+                  <a
+                    href='http://pokrovskytk.ru/place/gastrobar'
+                    target='_blank'
+                  >
+                    pokrovskytk.ru
+                  </a>
+                </li>
+                <li>
+                  <strong>Время работы:</strong> ежедневно, 08:00–23:00
+                </li>
+              </ul>
+            </div>
+            <Image
+              className='location__image'
+              alt='intro'
+              src={location1}
+              placeholder='blur'
+              unoptimized
+              quality={100}
+            />
+          </div>
+          <div className='location__item'>
+            <h3 className='location__item-heading'>Rusalka</h3>
+            <div className='location__info'>
+              <ul className='location__info-text'>
+                <li>
+                  <strong>Адрес:</strong>
+                  <a
+                    href='https://yandex.ru/profile/62326200017'
+                    target='_blank'
+                  >
+                    115, стр. 5, д. Новинки
+                  </a>
+                </li>
+                <li>
+                  <strong>Сайт:</strong>
+                  <a href='https://rusalkabistro.ru/' target='_blank'>
+                    rusalkabistro.ru
+                  </a>
+                </li>
+                <li>
+                  <strong>Время работы:</strong> пн-пт 09:00–00:00; сб,вс
+                  10:00–00:00
+                </li>
+              </ul>
+            </div>
+            <Image
+              className='location__image'
+              alt='intro'
+              src={location2}
+              placeholder='blur'
+              unoptimized
+              quality={100}
+            />
+          </div>
+        </div>
       </section>
+
+      <footer className='section'>created by Avvakumov I.D.</footer>
     </>
   );
 }
