@@ -229,6 +229,192 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className='rating section'>
+        <h2 className='rating__heading heading'>Турнирная таблица</h2>
+        <div className='rating__top'>
+          <div className='rating__top-info'>
+            <div className='rating__top-image'></div>
+            <div className='rating__top-name'>
+              <span>Иван - 200</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+          </div>
+          <div className='rating__top-info'>
+            <div className='rating__top-image'></div>
+            <div className='rating__top-name'>
+              <span>Аня - 777</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+          </div> <div className='rating__top-info'>
+            <div className='rating__top-image'></div>
+            <div className='rating__top-name'>
+              <span>Иван - 200</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+          </div>
+        </div>
+        <ul className='rating__list'>
+          <li className='rating__list-first'>
+            <span>№</span>
+            <span>Имя</span>
+            <span>Очки</span>
+          </li>
+          <li className='rating__list-item'>
+            <span className='rating__position'>1</span>
+            <Image className='rating__list-image' alt='intro' src={ff} />
+            <div className='rating__list-name'>
+              <span>Иван</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+            <div className='rating__list-score'>222</div>
+          </li>
+          <li className='rating__list-item'>
+            <span className='rating__position'>1</span>
+
+            <div className='rating__list-image'></div>
+            <div className='rating__list-name'>
+              <span>Иван</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+            <div className='rating__list-score'>222</div>
+          </li>
+          <li className='rating__list-item'>
+            <span className='rating__position'>1</span>
+            <Image className='rating__list-image' alt='intro' src={ff} />
+            <div className='rating__list-name'>
+              <span>Иван</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+            <div className='rating__list-score'>222</div>
+          </li>
+          <li className='rating__list-item'>
+            <span className='rating__position'>1</span>
+            <Image className='rating__list-image' alt='intro' src={ff} />
+            <div className='rating__list-name'>
+              <span>Иван</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+            <div className='rating__list-score'>222</div>
+          </li>
+          <li className='rating__list-item'>
+            <span className='rating__position'>1</span>
+            <Image className='rating__list-image' alt='intro' src={ff} />
+            <div className='rating__list-name'>
+              <span>Иван</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+            <div className='rating__list-score'>222</div>
+          </li>
+          <li className='rating__list-item'>
+            <span className='rating__position'>1</span>
+            <Image className='rating__list-image' alt='intro' src={ff} />
+            <div className='rating__list-name'>
+              <span>Иван</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+            <div className='rating__list-score'>222</div>
+          </li>
+          <li className='rating__list-item'>
+            <span className='rating__position'>1</span>
+            <Image className='rating__list-image' alt='intro' src={ff} />
+            <div className='rating__list-name'>
+              <span>Иван</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+            <div className='rating__list-score'>222</div>
+          </li>
+          <li className='rating__list-item'>
+            <span className='rating__position'>1</span>
+            <Image className='rating__list-image' alt='intro' src={ff} />
+            <div className='rating__list-name'>
+              <span>Иван</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+            <div className='rating__list-score'>222</div>
+          </li>
+          <li className='rating__list-item'>
+            <span className='rating__position'>1</span>
+            <Image className='rating__list-image' alt='intro' src={ff} />
+            <div className='rating__list-name'>
+              <span>Иван</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+            <div className='rating__list-score'>222</div>
+          </li>
+          <li className='rating__list-item'>
+            <span className='rating__position'>1</span>
+            <Image className='rating__list-image' alt='intro' src={ff} />
+            <div className='rating__list-name'>
+              <span>Иван</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+            <div className='rating__list-score'>222</div>
+          </li>
+          <li className='rating__list-item'>
+            <span className='rating__position'>1</span>
+            <Image className='rating__list-image' alt='intro' src={ff} />
+            <div className='rating__list-name'>
+              <span>Иван</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+            <div className='rating__list-score'>222</div>
+          </li>
+          <li className='rating__list-item'>
+            <span className='rating__position'>1</span>
+            <Image className='rating__list-image' alt='intro' src={ff} />
+            <div className='rating__list-name'>
+              <span>Иван</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+            <div className='rating__list-score'>222</div>
+          </li>
+          <li className='rating__list-item'>
+            <span className='rating__position'>1</span>
+            <Image className='rating__list-image' alt='intro' src={ff} />
+            <div className='rating__list-name'>
+              <span>Иван</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+            <div className='rating__list-score'>222</div>
+          </li>
+          <li className='rating__list-item'>
+            <span className='rating__position'>1</span>
+            <Image className='rating__list-image' alt='intro' src={ff} />
+            <div className='rating__list-name'>
+              <span>Иван</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+            <div className='rating__list-score'>222</div>
+          </li>
+          <li className='rating__list-item'>
+            <span className='rating__position'>1</span>
+            <Image className='rating__list-image' alt='intro' src={ff} />
+            <div className='rating__list-name'>
+              <span>Иван</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+            <div className='rating__list-score'>222</div>
+          </li>
+          <li className='rating__list-item'>
+            <span className='rating__position'>1</span>
+            <Image className='rating__list-image' alt='intro' src={ff} />
+            <div className='rating__list-name'>
+              <span>Иван</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+            <div className='rating__list-score'>222</div>
+          </li>
+          <li className='rating__list-item'>
+            <span className='rating__position'>1</span>
+            <Image className='rating__list-image' alt='intro' src={ff} />
+            <div className='rating__list-name'>
+              <span>Иван</span>
+              <a href='#'>@avvakumovid</a>
+            </div>
+            <div className='rating__list-score'>222</div>
+          </li>
+        </ul>
+      </section>
       <section className='location section'>
         <h2 className='location__heading heading'>Локации</h2>
         <div className='location__content'>
@@ -282,7 +468,7 @@ export default function Home() {
                 <li>
                   <strong>Адрес:</strong>
                   <a
-                  className='location__info-value'
+                    className='location__info-value'
                     href='https://yandex.ru/profile/62326200017'
                     target='_blank'
                   >
@@ -291,15 +477,19 @@ export default function Home() {
                 </li>
                 <li>
                   <strong>Сайт:</strong>
-                  <a 
-                  className='location__info-value'
-                  href='https://rusalkabistro.ru/' target='_blank'>
+                  <a
+                    className='location__info-value'
+                    href='https://rusalkabistro.ru/'
+                    target='_blank'
+                  >
                     rusalkabistro.ru
                   </a>
                 </li>
                 <li>
                   <strong>Время работы:</strong>{' '}
-                  <span className='location__info-value'>пн-пт 09:00–00:00; сб,вс 10:00–00:00</span>
+                  <span className='location__info-value'>
+                    пн-пт 09:00–00:00; сб,вс 10:00–00:00
+                  </span>
                 </li>
               </ul>
             </div>
