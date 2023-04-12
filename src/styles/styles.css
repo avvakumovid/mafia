@@ -344,7 +344,7 @@
 }
 
 .location__item-heading {
-  font-size: calc(var(--index) * 1.4);
+  font-size: calc(var(--index) * 1.5);
   color: var(--color-header);
   margin-bottom: calc(var(--index) * 1);
 
@@ -373,11 +373,11 @@
 }
 
 .location__info-text {
-
+  font-size: calc(var(--index) * 1.2);
   list-style-type: none;
 }
 
-.location__info-text a {
+.location__info-value {
   margin-left: 10px;
   color: var(--color-text);
 }

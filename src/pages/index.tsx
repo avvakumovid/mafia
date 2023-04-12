@@ -241,6 +241,7 @@ export default function Home() {
                 <li>
                   <strong>Адрес:</strong>
                   <a
+                    className='location__info-value'
                     href='https://yandex.ru/profile/1748208192'
                     target='_blank'
                   >
@@ -250,6 +251,7 @@ export default function Home() {
                 <li>
                   <strong>Сайт:</strong>
                   <a
+                    className='location__info-value'
                     href='http://pokrovskytk.ru/place/gastrobar'
                     target='_blank'
                   >
@@ -257,7 +259,10 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <strong>Время работы:</strong> ежедневно, 08:00–23:00
+                  <strong>Время работы:</strong>
+                  <span className='location__info-value'>
+                    ежедневно, 08:00–23:00
+                  </span>
                 </li>
               </ul>
             </div>
@@ -277,6 +282,7 @@ export default function Home() {
                 <li>
                   <strong>Адрес:</strong>
                   <a
+                  className='location__info-value'
                     href='https://yandex.ru/profile/62326200017'
                     target='_blank'
                   >
@@ -285,13 +291,15 @@ export default function Home() {
                 </li>
                 <li>
                   <strong>Сайт:</strong>
-                  <a href='https://rusalkabistro.ru/' target='_blank'>
+                  <a 
+                  className='location__info-value'
+                  href='https://rusalkabistro.ru/' target='_blank'>
                     rusalkabistro.ru
                   </a>
                 </li>
                 <li>
-                  <strong>Время работы:</strong> пн-пт 09:00–00:00; сб,вс
-                  10:00–00:00
+                  <strong>Время работы:</strong>{' '}
+                  <span className='location__info-value'>пн-пт 09:00–00:00; сб,вс 10:00–00:00</span>
                 </li>
               </ul>
             </div>
