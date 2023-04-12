@@ -165,6 +165,7 @@
 
 .gallery__paragraph {
   text-align: start;
+  font-size: calc(var(--index) * .9);
 }
 
 
@@ -191,7 +192,7 @@
 
 
 .swiper {
-  width: calc(var(--index) * 25);
+  width: 100%;
 }
 
 .swiper-slide {
@@ -201,6 +202,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+.swiper__slide {
+  width: 100%;
+  height: 80vh;
 }
 
 .swiper-pagination-bullet {
@@ -232,7 +239,6 @@
   background-position: center;
   text-align: center;
   align-content: center;
-  color: forestgreen;
 }
 
 [class^="box-"] {
@@ -250,12 +256,14 @@
     "A A A A  A A A A  B B B B   C C C C"
     "A A A A  A A A A  B B B B   C C C C"
     "D D D D  D D D D  D D D D   C C C C"
-    "D D D D  D D D D  D D D D   C C C C";
+    "D D D D  D D D D  D D D D   C C C C"
+    "E E E E  E E E E  E F F F   F F F F"
+    "E E E E  E E E E  E F F F   F F F F"
+  ;
 }
 
 .box-1 {
   grid-area: A;
-
 }
 
 .box-2 {
@@ -265,12 +273,21 @@
 
 .box-3 {
   grid-area: C;
-  min-width: 25vw;
+  min-width: 20vw;
 }
 
 .box-4 {
   grid-area: D;
-  min-height: 50vh;
+}
+
+.box-5 {
+  grid-area: E;
+  height: 50vh;
+}
+
+.box-6 {
+  grid-area: F;
+
 }
 
 @media (max-width: 990px) {
@@ -292,7 +309,7 @@
   }
 
   .gallery__image {
-    width: 70%;
+    width: 50%;
     height: auto;
   }
 
@@ -303,7 +320,10 @@
       "A A A A"
       "B B B B"
       "C C C C"
-      "D D D D";
+      "D D D D"
+      "E E E E"
+      "F F F F"
+    ;
   }
 
   [class^="box-"] {
@@ -314,6 +334,10 @@
 
   .gallery__heading {
     text-align: center;
+  }
+
+  .swiper__slide {
+    height: 50vh;
   }
 }
 
