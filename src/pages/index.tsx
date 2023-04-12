@@ -5,7 +5,7 @@ import bridge from '../../public/bridge.png';
 import cards from '../../public/cards.jpg';
 import table from '../../public/table.jpg';
 import s from '../../public/174.jpg';
-import ff from '../../public/ff.jpg';
+import ff from '../../public/ivan.jpg';
 import { useEffect } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -87,7 +87,7 @@ export default function Home() {
       </section>
       <section className='gallery section'>
         <div className='gallery__content content'>
-          <h2 className='gallery__header heading'>Галерея</h2>
+          <h2 className='gallery__heading heading'>Галерея</h2>
           <p className='gallery__paragraph paragraph'>
             Наши фотографии - это лучший способ узнать о нашем клубе и игре
             "Мафия". Мы с удовольствием делимся своими снимками, чтобы показать,
@@ -109,8 +109,81 @@ export default function Home() {
           <SwiperSlide>
             <Image className='gallery__image' alt='intro' src={cards} />
           </SwiperSlide>
+          <SwiperSlide>
+            <Image className='gallery__image' alt='intro' src={cards} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image className='gallery__image' alt='intro' src={cards} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image className='gallery__image' alt='intro' src={cards} />
+          </SwiperSlide>
         </Swiper>
       </section>
+      <section className='location section'>
+        <h2 className='location__heading heading'>Локации</h2>
+        <div></div>
+      </section>
+      <div className='container'>
+        <div className='box-1'>
+          <div className='gallery__heading content'>
+            <h2 className='gallery__header heading'>Галерея</h2>
+            <p className='gallery__paragraph paragraph'>
+              Наши фотографии - это лучший способ узнать о нашем клубе и игре
+              "Мафия". Мы с удовольствием делимся своими снимками, чтобы
+              показать, как мы проводим время, играя в игру, и чтобы
+              познакомиться с нашими участниками. Вы можете увидеть фотографии
+              на нашем сайте и ознакомиться с нашими последними играми.
+            </p>
+          </div>
+        </div>
+        <div className='box-2'>
+          <Image
+            alt='cars'
+            src={cards}
+            placeholder='blur'
+            unoptimized
+            quality={100}
+            fill
+            sizes='100vw'
+            style={{
+              objectFit: 'cover',
+              objectPosition: 'center center',
+            }}
+          />
+        </div>
+        <div className='box-3'>
+          <Image
+            alt='cars'
+            src={cards}
+            placeholder='blur'
+            unoptimized
+            quality={100}
+            fill
+            sizes='100vw'
+            style={{ objectFit: 'cover' }}
+          />
+        </div>
+        <div className='box-4'>
+          <Image
+            alt='cars'
+            src={ff}
+            placeholder='blur'
+            unoptimized
+            quality={100}
+            fill
+            sizes='100vw'
+            style={{ objectFit: 'cover' }}
+          />
+        </div>
+      </div>
+
+      <div
+        style={{
+          width: 500,
+          height: 3000,
+        }}
+      ></div>
     </>
   );
 }
