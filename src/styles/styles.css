@@ -533,8 +533,45 @@
   background-color: #979797;
 }
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: auto;
+}
+
+.footer__heading {
+  margin-bottom: 20px;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.footer__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 10px;
+}
+
+.footer__link a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.copyright {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
 @media (max-width: 990px) {
-  .section {
+  .intro {
     flex-direction: column-reverse;
     justify-content: center;
   }
@@ -565,14 +602,12 @@
       "C C C C"
       "D D D D"
       "E E E E"
-      "F F F F"
-    ;
+      "F F F F";
   }
 
   [class^="box-"] {
     /* Размещаем контейнеры по центру */
     min-height: 50vh;
-
   }
 
   .gallery__heading {
@@ -592,7 +627,6 @@
   .grid__item:nth-child(1) {
     align-items: center;
     text-align: center;
-
   }
 
   .grid__item {
@@ -629,13 +663,21 @@
     flex-direction: column;
   }
 
-
   .rating__list {
     width: 100%;
   }
 
   .rating__top {
     width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer__left {
+    flex-direction: column;
+
   }
 }
 

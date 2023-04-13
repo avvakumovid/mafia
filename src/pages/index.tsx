@@ -10,6 +10,8 @@ import sicilia from '../../public/sicilia.jpg';
 import paris from '../../public/paris.jpg';
 import location1 from '../../public/location1.jpg';
 import location2 from '../../public/location2.jpg';
+import tg from '../../public/telegram.svg';
+import inst from '../../public/instagram.svg';
 
 import { useEffect } from 'react';
 import 'swiper/css';
@@ -453,14 +455,14 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-              <Image
-                className='location__image'
-                alt='intro'
-                src={location1}
-                placeholder='blur'
-                unoptimized
-                quality={100}
-              />
+            <Image
+              className='location__image'
+              alt='intro'
+              src={location1}
+              placeholder='blur'
+              unoptimized
+              quality={100}
+            />
           </div>
           <div className='location__item'>
             <h3 className='location__item-heading'>Rusalka</h3>
@@ -494,19 +496,37 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-              <Image
-                className='location__image'
-                alt='intro'
-                src={location2}
-                placeholder='blur'
-                unoptimized
-                quality={100}
-              />
+            <Image
+              className='location__image'
+              alt='intro'
+              src={location2}
+              placeholder='blur'
+              unoptimized
+              quality={100}
+            />
           </div>
         </div>
       </section>
-
-      <footer className='section'>created by Avvakumov I.D.</footer>
+      <footer className='footer section'>
+        <div >
+          <h3 className='footer__heading'>Контакты</h3>
+              <div className='footer__left'>
+              <span className='footer__link'>
+            <Image width={40} height={40} alt='telegram' src={tg} />
+            <a  href='https://t.me/+Ekwb-q5ZEAJhZDg6' target='_blank'>Mafia Novaya Riga</a>
+          </span>
+          <span className='footer__link'>
+            <Image width={40} height={40} alt='instagram' src={inst} />
+            <a  href='https://www.instagram.com/mafia_novaya_riga/' target='_blank'>@mafia_novaya_riga</a>
+          </span>
+                </div>
+        </div>
+        <div className='footer__right'>
+          <a className='copyright'>
+            © avvakumovid
+          </a>
+        </div>
+      </footer>
     </>
   );
 }
