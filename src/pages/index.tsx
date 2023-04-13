@@ -219,7 +219,7 @@ export default function Home() {
           <div className='grid__item'>
             <Image
               alt='cars'
-              src={ff}
+              src={chicago}
               placeholder='blur'
               unoptimized
               quality={100}
