@@ -245,7 +245,8 @@ export default function Home() {
               <span>Аня - 777</span>
               <a href='#'>@avvakumovid</a>
             </div>
-          </div> <div className='rating__top-info'>
+          </div>{' '}
+          <div className='rating__top-info'>
             <div className='rating__top-image'></div>
             <div className='rating__top-name'>
               <span>Иван - 200</span>
@@ -452,14 +453,14 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <Image
-              className='location__image'
-              alt='intro'
-              src={location1}
-              placeholder='blur'
-              unoptimized
-              quality={100}
-            />
+              <Image
+                className='location__image'
+                alt='intro'
+                src={location1}
+                placeholder='blur'
+                unoptimized
+                quality={100}
+              />
           </div>
           <div className='location__item'>
             <h3 className='location__item-heading'>Rusalka</h3>
@@ -493,14 +494,14 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <Image
-              className='location__image'
-              alt='intro'
-              src={location2}
-              placeholder='blur'
-              unoptimized
-              quality={100}
-            />
+              <Image
+                className='location__image'
+                alt='intro'
+                src={location2}
+                placeholder='blur'
+                unoptimized
+                quality={100}
+              />
           </div>
         </div>
       </section>
