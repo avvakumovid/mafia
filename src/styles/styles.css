@@ -425,6 +425,7 @@
 
 .rating__top-info:nth-child(1) .rating__top-image {
   border: 5px solid #c0c0c0;
+  border: 5px solid #ffd700;
   position: relative;
 }
 
@@ -444,6 +445,7 @@
 
 .rating__top-info:nth-child(3) .rating__top-image {
   border: 5px solid #cd7f32;
+
 }
 
 
@@ -502,11 +504,13 @@
   background-color: #2c2c2c;
 }
 
-.rating__list-first {
+.rating__list-heading {
   display: flex;
+  width: 60%;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: calc(var(--index) * 1.5);
+  padding: 0 10px;
+  margin-bottom: calc(var(--index) * -1.5);
 }
 
 .rating__list-name {
@@ -664,6 +668,10 @@
   }
 
   .rating__list {
+    width: 100%;
+  }
+
+  .rating__list-heading {
     width: 100%;
   }
 
