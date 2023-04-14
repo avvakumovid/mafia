@@ -1,0 +1,23 @@
+.image {
+  width: calc(var(--index) * 25);
+  height: auto;
+  border-radius: 8px;
+  filter: grayscale(30%);
+}
+
+.paragraph {
+  width: calc(var(--index) * 25);
+  font-size: var(--fz);
+  text-align: end;
+}
+
+@media (max-width: 990px) {
+  .paragraph {
+    text-align: center;
+  }
+
+  .intro {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}

@@ -1,6 +1,15 @@
 import { FC, PropsWithChildren } from 'react';
 import styles from './Container.module.css';
 
-export const Container: FC = ({ children }: PropsWithChildren) => {
-  return <section className={styles.container}>{children}</section>;
+interface ContainerProps {
+  className?: string;
+}
+
+export const Container: FC<PropsWithChildren<ContainerProps>> = ({
+  children,
+  className,
+}) => {
+  return (
+    <section className={`${styles.container} ${className}`}>{children}</section>
+  );
 };
