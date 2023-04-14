@@ -1,0 +1,59 @@
+.container {
+  position: relative;
+}
+
+.layers {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(239, 244, 240);
+}
+
+.layer {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+}
+
+.bridge {
+  z-index: 3;
+  transform: translate3d(0, calc(var(--scrollTop) / 2.6), 0);
+}
+
+.cars {
+  z-index: 5;
+  transform: translate3d(0, calc(var(--scrollTop) / 12), 0);
+}
+
+.builds {
+  z-index: 3;
+  transform: translate3d(0, calc(var(--scrollTop) / 3.4), 0);
+}
+
+.header {
+  z-index: 4;
+  transform: translate3d(0, calc(var(--scrollTop) / var(--rotation)), 0);
+  will-change: transform;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--red);
+  /*text-shadow: var(--red-shadow);*/
+}
+
+.title {
+  font-size: calc(var(--index) * 2.5);
+  letter-spacing: calc(var(--index) / 2.25);
+}
+
+.caption {
+  font-size: calc(var(--index) * 1.175);
+  letter-spacing: calc(var(--index) / 3.5);
+}
