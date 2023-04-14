@@ -1,0 +1,7 @@
+.heading {
+  text-transform: uppercase;
+  font-size: calc(var(--index) * 1.8);
+  letter-spacing: calc(var(--index) / 7);
+  will-change: transform;
+  color: var(--red);
+}

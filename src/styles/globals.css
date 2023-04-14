@@ -15,6 +15,7 @@
   --color-text: #cdc6c3;
   --gallery-gap: calc(var(--index) * 10);
   --rotation: 1.6;
+  --fz: font-size: calc(var(--index) * 1.2);
 }
 
 body {

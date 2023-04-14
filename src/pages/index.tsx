@@ -18,6 +18,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
+import { Heading } from '@/components/ui';
 export default function Home() {
   const handleScroll = () => {
     document.body.style.cssText += `--scrollTop: ${window.scrollY}px`;
@@ -81,7 +82,7 @@ export default function Home() {
       <section className='section intro'>
         <Image className='intro__image image' alt='intro' src={cards} />
         <div className='intro__content content'>
-          <h2 className='intro__header heading'>Вступление</h2>
+          <Heading text='Вступлениеasd' />
           <p className='intro__paragraph paragraph'>
             Добро пожаловать в клуб "Мафия" - место, где любители настольных игр
             могут собраться вместе, чтобы играть в увлекательную игру "Мафия".
