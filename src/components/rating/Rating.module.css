@@ -1,0 +1,161 @@
+.rating {
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(var(--index) * 1.2);
+  font-weight: 600;
+  row-gap: calc(var(--index) * 3);
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+  height: calc(var(--index) * 5.25);
+
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.info:nth-child(1) {
+  align-self: flex-start;
+}
+
+.info:nth-child(1) .image {
+  border: 5px solid #c0c0c0;
+  border: 5px solid #ffd700;
+  position: relative;
+}
+
+
+.info:nth-child(2) {
+  align-self: flex-end;
+}
+
+.info:nth-child(2) .rating__top-image {
+  border: 5px solid #ffd700;
+}
+
+
+.info:nth-child(3) {
+  align-self: flex-start;
+}
+
+.info:nth-child(3) .rating__top-image {
+  border: 5px solid #cd7f32;
+
+}
+
+
+.image {
+  width: calc(var(--index) * 3.5);
+  height: calc(var(--index) * 3.5);
+  border-radius: 50%;
+  background-color: #979797;
+  margin-bottom: 10px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: calc(var(--index) * .7);
+}
+
+.list {
+  height: 70vh;
+  width: 60%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.position {
+  font-size: calc(var(--index) * 1.6);
+  color: var(--red);
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: calc(var(--index) * 1.5);
+  margin-bottom: calc(var(--index) * 1.5);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.item:nth-child(2n) {
+  background-color: #2c2c2c;
+}
+
+.heading {
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: calc(var(--index) * -1.5);
+}
+
+.listname {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.listname a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: calc(var(--index) * .7);
+}
+
+.score {
+  margin-left: auto
+}
+
+.listimage {
+  width: calc(var(--index) * 3.5);
+  height: calc(var(--index) * 3.5);
+  border-radius: 50%;
+  background-color: #979797;
+}
+
+@media (max-width: 990px) {
+  .rating {
+    flex-direction: column;
+  }
+
+  .list {
+    width: 100%;
+  }
+
+  .heading {
+    width: 100%;
+  }
+
+  .top {
+    width: 100%;
+  }
+
+}
