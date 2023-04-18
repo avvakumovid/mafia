@@ -16,6 +16,7 @@
 .position {
   font-size: calc(var(--index) * 1.6);
   color: var(--red);
+  width: calc(var(--index) * 2);
 }
 
 .name {
