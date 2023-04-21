@@ -7,6 +7,7 @@ import paris from '../../../public/paris.jpg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
 import { Container, Heading } from '../ui';
+import { VideoPlayer } from '../ui/video-player';
 
 export const Gallery = ({}) => {
   return (
@@ -23,122 +24,43 @@ export const Gallery = ({}) => {
           </p>
         </div>
         <div className={styles.item}>
-          <Image
-            alt='sicilia'
-            src={sicilia}
-            placeholder='blur'
-            unoptimized
-            quality={100}
-            fill
-            style={{
-              objectFit: 'cover',
-            }}
-          />
+          <VideoPlayer width={'100%'} src='/video/4.mp4' />
         </div>
         <div className={styles.item}>
-          <Image
-            alt='paris'
-            src={paris}
-            placeholder='blur'
-            unoptimized
-            quality={100}
-            fill
-            style={{
-              objectFit: 'cover',
-            }}
-          />
+          <VideoPlayer src='/video/1.mp4' />
         </div>
         <div className={styles.item}>
-          <video controls width='100%'>
-            <source src='/video/IMG_1092.mp4' type='video/mp4' />
-            video.
-          </video>
+          <VideoPlayer width={'100%'} src='/video/6.mp4' />
         </div>
         <div className={styles.item}>
-          <Swiper
-            pagination={{
-              dynamicBullets: true,
-            }}
-            className={styles.swiper}
-            modules={[Pagination]}
-          >
-            <SwiperSlide>
-              <div className={styles.swiper}>
-                <Image
-                  alt='chicago'
-                  src={chicago}
-                  placeholder='blur'
-                  unoptimized
-                  quality={100}
-                  style={{
-                    height: '100%',
-                    width: 'auto',
-                  }}
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.swiper}>
-                <Image
-                  alt='newYork'
-                  src={newYork}
-                  placeholder='blur'
-                  unoptimized
-                  quality={100}
-                  className={styles.swiper}
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.swiper}>
-                <Image
-                  alt='sicilia'
-                  src={sicilia}
-                  placeholder='blur'
-                  unoptimized
-                  quality={100}
-                  className={styles.swiper}
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.swiper}>
-                <Image
-                  alt='paris'
-                  src={paris}
-                  placeholder='blur'
-                  unoptimized
-                  quality={100}
-                  className={styles.swiper}
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.swiper}>
-                <Image
-                  alt='paris'
-                  src={paris}
-                  placeholder='blur'
-                  unoptimized
-                  quality={100}
-                  className={styles.swiper}
-                />
-              </div>
-            </SwiperSlide>
-          </Swiper>
+          <VideoPlayer width={'100%'} src='/video/3.mp4' />
         </div>
         <div className={styles.item}>
-          <Image
-            alt='cars'
-            src={chicago}
-            placeholder='blur'
-            unoptimized
-            quality={100}
-            fill
-            style={{
-              objectFit: 'cover',
-            }}
-          />
+          <VideoPlayer width={'100%'} src='/video/5.mp4' />
+        </div>
+        <div className={styles.item}>
+          <VideoPlayer width={'100%'} src='/video/2.mp4' />
+        </div>
+        <div className={styles.item}>
+          <VideoPlayer width={'100%'} src='/video/7.mp4' />
+        </div>
+        <div className={styles.item}>
+          <VideoPlayer width={'100%'} src='/video/8.mp4' />
+        </div>
+        <div className={styles.item}>
+          <VideoPlayer width={'100%'} src='/video/9.mp4' />
+        </div>
+        <div className={styles.item}>
+          <VideoPlayer width={'100%'} src='/video/10.mp4' />
+        </div>
+        <div className={styles.item}>
+          <VideoPlayer width={'100%'} src='/video/11.mp4' />
+        </div>
+        <div className={styles.item}>
+          <VideoPlayer width={'100%'} src='/video/12.mp4' />
+        </div>
+        <div className={styles.item}>
+          <VideoPlayer width={'100%'} src='/video/13.mp4' />
         </div>
       </div>
     </Container>
