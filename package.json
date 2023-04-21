@@ -18,5 +18,8 @@
     "react-responsive-carousel": "^3.2.23",
     "swiper": "^9.2.0",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0"
   }
 }

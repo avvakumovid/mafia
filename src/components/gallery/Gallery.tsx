@@ -49,17 +49,10 @@ export const Gallery = ({}) => {
           />
         </div>
         <div className={styles.item}>
-          <Image
-            alt='newYork'
-            src={newYork}
-            placeholder='blur'
-            unoptimized
-            quality={100}
-            fill
-            style={{
-              objectFit: 'cover',
-            }}
-          />
+          <video controls width='100%'>
+            <source src='/video/IMG_1092.mp4' type='video/mp4' />
+            video.
+          </video>
         </div>
         <div className={styles.item}>
           <Swiper
