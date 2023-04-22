@@ -35,3 +35,17 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+
+.swiper-pagination-bullet {
+  background-color: var(--red) !important;
+  opacity: .7 !important;
+
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+}
+
+.swiper-button-prev {
+  bottom: 0;
+}
