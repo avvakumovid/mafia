@@ -12,27 +12,27 @@ export const list: Player[] = [
   {
     id: '1',
     name: 'Эдгар',
-    score: 15
+    score: 20
   },
   {
     id: '2',
     name: 'Вика',
-    score: 14
+    score: 21
   },
   {
     id: '3',
     name: 'Даша',
-    score: 14
+    score: 19
   },
   {
     id: '4',
     name: 'Анна',
-    score: 13
+    score: 16
   },
   {
     id: '5',
     name: 'Алексей',
-    score: 12
+    score: 15
   },
   {
     id: '6',
@@ -42,7 +42,7 @@ export const list: Player[] = [
   {
     id: '7',
     name: 'Иван',
-    score: 11,
+    score: 19,
     contact: '@avvakumovid',
     avatar: require('../public/ivan.jpg')
   },
@@ -69,12 +69,12 @@ export const list: Player[] = [
   {
     id: '12',
     name: 'Женя',
-    score: 4
+    score: 6
   },
   {
     id: '13',
     name: 'Настя',
-    score: 4
+    score: 8
   },
   {
     id: '14',
@@ -89,7 +89,7 @@ export const list: Player[] = [
   {
     id: '16',
     name: 'Илья',
-    score: 3
+    score: 9
   },
   {
     id: '17',
@@ -103,8 +103,18 @@ export const list: Player[] = [
   },
   {
     id: '19',
-    name: 'Мария Хастюк',
+    name: 'Мария Хатсюк',
     score: 1
+  }, 
+  {
+    id: '20',
+    name: 'Руслан',
+    score: 2
+  },
+  {
+    id: '21',
+    name: 'Андрей',
+    score: 0
   },
 
 ]
