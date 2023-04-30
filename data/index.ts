@@ -12,49 +12,57 @@ export const list: Player[] = [
   {
     id: '1',
     name: 'Эдгар',
-    score: 20
+    score: 26,
+    avatar: require('../public/1.jpg')
   },
   {
     id: '2',
     name: 'Вика',
-    score: 21
+    score: 27,
+    avatar: require('../public/2.jpg')
   },
   {
     id: '3',
     name: 'Даша',
-    score: 19
+    score: 23,
+    
   },
   {
     id: '4',
     name: 'Анна',
-    score: 16
+    score: 21,
+    avatar: require('../public/4.jpg')
   },
   {
     id: '5',
     name: 'Алексей',
-    score: 15
+    score: 15,
+    avatar: require('../public/5.jpg')
   },
   {
     id: '6',
     name: 'Екатерина',
-    score: 12
+    score: 12,
+    avatar: require('../public/6.jpg')
   },
   {
     id: '7',
     name: 'Иван',
-    score: 19,
+    score: 23,
     contact: '@avvakumovid',
     avatar: require('../public/ivan.jpg')
   },
   {
     id: '8',
     name: 'Крис',
-    score: 9
+    score: 9,
+    avatar: require('../public/8.jpg')
   },
   {
     id: '9',
     name: 'Степан',
-    score: 7
+    score: 10,
+    avatar: require('../public/7.jpg')
   },
   {
     id: '10',
@@ -109,12 +117,27 @@ export const list: Player[] = [
   {
     id: '20',
     name: 'Руслан',
-    score: 2
+    score: 8
   },
   {
     id: '21',
     name: 'Андрей',
     score: 0
+  },
+  {
+    id: '22',
+    name: 'Дмитрий',
+    score: 2
+  },
+  {
+    id: '23',
+    name: 'Аркадий',
+    score: 5
+  },
+  {
+    id: '24',
+    name: 'Сергей',
+    score: 6
   },
 
 ]
