@@ -62,7 +62,7 @@ export const list: Player[] = [
     id: '9',
     name: 'Степан',
     score: 10,
-    avatar: require('../public/7.jpg')
+    avatar: require('../public/9.jpg')
   },
   {
     id: '10',
