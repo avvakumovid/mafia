@@ -82,7 +82,8 @@ export const list: Player[] = [
   {
     id: '13',
     name: 'Настя',
-    score: 8
+    score: 8,
+    avatar: require('../public/13.jpg')
   },
   {
     id: '14',
@@ -97,7 +98,8 @@ export const list: Player[] = [
   {
     id: '16',
     name: 'Илья',
-    score: 9
+    score: 9,
+    avatar: require('../public/16.jpg')
   },
   {
     id: '17',
@@ -112,7 +114,8 @@ export const list: Player[] = [
   {
     id: '19',
     name: 'Мария Хатсюк',
-    score: 1
+    score: 1,
+    avatar: require('../public/19.jpg')
   }, 
   {
     id: '20',
@@ -127,7 +130,8 @@ export const list: Player[] = [
   {
     id: '22',
     name: 'Дмитрий',
-    score: 2
+    score: 2,
+    avatar: require('../public/22.jpg')
   },
   {
     id: '23',
@@ -138,6 +142,12 @@ export const list: Player[] = [
     id: '24',
     name: 'Сергей',
     score: 6
+  },
+  {
+    id: '25',
+    name: 'Юля',
+    score: 6,
+    avatar: require('../public/25.jpg')
   },
 
 ]
