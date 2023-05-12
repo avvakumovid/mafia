@@ -12,31 +12,31 @@ export const list: Player[] = [
   {
     id: '1',
     name: 'Эдгар',
-    score: 26,
+    score: 33,
     avatar: require('../public/1.jpg')
   },
   {
     id: '2',
     name: 'Вика',
-    score: 27,
+    score: 36,
     avatar: require('../public/2.jpg')
   },
   {
     id: '3',
     name: 'Даша',
     score: 23,
-    
+
   },
   {
     id: '4',
     name: 'Анна',
-    score: 21,
+    score: 31,
     avatar: require('../public/4.jpg')
   },
   {
     id: '5',
     name: 'Алексей',
-    score: 15,
+    score: 16,
     avatar: require('../public/5.jpg')
   },
   {
@@ -48,14 +48,14 @@ export const list: Player[] = [
   {
     id: '7',
     name: 'Иван',
-    score: 23,
+    score: 36,
     contact: '@avvakumovid',
     avatar: require('../public/ivan.jpg')
   },
   {
     id: '8',
     name: 'Крис',
-    score: 9,
+    score: 15,
     avatar: require('../public/8.jpg')
   },
   {
@@ -77,12 +77,12 @@ export const list: Player[] = [
   {
     id: '12',
     name: 'Женя',
-    score: 6
+    score: 7
   },
   {
     id: '13',
     name: 'Настя',
-    score: 8,
+    score: 10,
     avatar: require('../public/13.jpg')
   },
   {
@@ -114,14 +114,14 @@ export const list: Player[] = [
   },
   {
     id: '19',
-    name: 'Мария Хатсюк',
-    score: 1,
+    name: 'Мария Гацук',
+    score: 8,
     avatar: require('../public/19.jpg')
-  }, 
+  },
   {
     id: '20',
     name: 'Руслан',
-    score: 8
+    score: 13
   },
   {
     id: '21',
@@ -131,13 +131,13 @@ export const list: Player[] = [
   {
     id: '22',
     name: 'Дмитрий',
-    score: 2,
+    score: 4,
     avatar: require('../public/22.jpg')
   },
   {
     id: '23',
     name: 'Аркадий',
-    score: 5
+    score: 9
   },
   {
     id: '24',
@@ -149,6 +149,54 @@ export const list: Player[] = [
     name: 'Юля',
     score: 6,
     avatar: require('../public/25.jpg')
+  },
+  {
+    id: '26',
+    name: 'Маша',
+    score: 9,
+    avatar: require('../public/26.jpg')
+  },
+  {
+    id: '27',
+    name: 'Кристина',
+    score: 7,
+    avatar: require('../public/27.jpg')
+  },
+  {
+    id: '28',
+    name: 'Татьяна',
+    score: 6,
+  },
+  {
+    id: '29',
+    name: 'Алексей Кочергин',
+    score: 5,
+    avatar: require('../public/29.jpg')
+  },
+  {
+    id: '30',
+    name: 'Сергей (муж Кати)',
+    score: 4,
+  },
+  {
+    id: '31',
+    name: 'Катя (жена Сергея)',
+    score: 3,
+  },
+  {
+    id: '32',
+    name: 'Марина',
+    score: 3,
+  },
+  {
+    id: '33',
+    name: 'Татьяна стилист',
+    score: 2,
+  },
+  {
+    id: '34',
+    name: 'Ольга',
+    score: 2,
   },
 
 ]
