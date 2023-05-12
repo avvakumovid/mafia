@@ -25,17 +25,17 @@
 
 .bridge {
   z-index: 3;
-  transform: translate3d(0, calc(var(--scrollTop) / 2.6), 0);
+  /*transform: translate3d(0, calc(var(--scrollTop) / 2.6), 0);*/
 }
 
 .cars {
   z-index: 5;
-  transform: translate3d(0, calc(var(--scrollTop) / 12), 0);
+  /*transform: translate3d(0, calc(var(--scrollTop) / 12), 0);*/
 }
 
 .builds {
   z-index: 3;
-  transform: translate3d(0, calc(var(--scrollTop) / 3.4), 0);
+  /*transform: translate3d(0, calc(var(--scrollTop) / 3.4), 0);*/
 }
 
 .header {
